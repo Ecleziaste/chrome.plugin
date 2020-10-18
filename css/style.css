@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+.body {
+    background: url('../img/moraine_lake.jpg') no-repeat center top / cover;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: whitesmoke;
+    /* max-width: 100%; */
+    /* letter-spacing: 0.5px; */
+    padding: 0;
+    margin: 0;
+}
+
+.main__wrapper {
+    letter-spacing: 0.5px ;
+    padding: 10px 10px 10px 10px;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+}
+
+.main__header {
+    display: flex;
+    /* flex: 0 0 0 25%; */
+    justify-content: flex-end;
+    flex-flow: row wrap;
+}
+
+.header__column {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    /* margin: auto 0; */
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.upper__element {
+    color: blueviolet;
+}
