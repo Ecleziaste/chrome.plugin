@@ -40,3 +40,19 @@
 .upper__element {
     color: blueviolet;
 }
+
+.main__content {
+    display: flex;
+    justify-content: center;
+    margin: 200px auto;
+    font-weight: 900;
+    font-size: 40px;
+    color: rgb(140, 15, 15);
+}
+
+.center__column {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-flow: column wrap;
+}
