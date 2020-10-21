@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 .body {
-    background: url('../img/moraine_lake.jpg') no-repeat center top / cover;
+    /* background: url('../img/moraine_lake.jpg') no-repeat center top / cover; */
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -14,16 +14,22 @@
 
 .main__wrapper {
     letter-spacing: 0.5px ;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
+    margin: 0;
+    background: url('../img/moraine_lake.jpg') no-repeat center top / cover;
+    
     /* max-width: 1200px; */
     /* margin: 0 auto; */
 }
 
 .main__header {
     display: flex;
+    margin-right: 5px;
     /* flex: 0 0 0 25%; */
     justify-content: flex-end;
     flex-flow: row wrap;
+
+    border: solid red;
 }
 
 .header__column {
@@ -35,6 +41,8 @@
     /* margin: auto 0; */
     justify-content: center;
     flex-flow: column wrap;
+    
+    border: solid red;
 }
 
 .upper__element {
