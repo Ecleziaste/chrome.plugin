@@ -1,31 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 .body {
-    /* background: url('../img/moraine_lake.jpg') no-repeat center top / cover; */
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: whitesmoke;
+    /* background-image: url('../img/moraine_lake.jpg'); */
     /* max-width: 100%; */
     /* letter-spacing: 0.5px; */
     padding: 0;
     margin: 0;
 }
 
+img {
+    border: 0px;
+    position:fixed;
+    z-index: -1;
+    top:0;
+    left:0; 
+    max-width:100%;
+    height:auto;
+}
+
 .main__wrapper {
     letter-spacing: 0.5px ;
     padding: 10px;
     margin: 0;
-    background: url('../img/moraine_lake.jpg') no-repeat center top / cover;
-    
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
+    /* background: url('../img/moraine_lake.jpg') no-repeat center top / cover; */
 }
 
 .main__header {
     display: flex;
     margin-right: 5px;
-    /* flex: 0 0 0 25%; */
     justify-content: flex-end;
     flex-flow: row wrap;
 }
@@ -48,9 +54,14 @@
 }
 
 .main__content {
+  
+    /* нужно центрировать относительно верхних и нижних блоков по флексу для любых экранов, если возможно
+    margin: 250px сделано на глаз
+     */
+
     display: flex;
     justify-content: center;
-    margin: 200px auto;
+    margin: 250px auto;
     font-weight: 900;
     font-size: 40px;
     color: rgb(140, 15, 15);
@@ -66,6 +77,7 @@
 .main__footer {
     display: flex;
     justify-content: flex-start;
+    /* align-items: flex-end; */
     flex-flow: row wrap;
 }
 
@@ -76,8 +88,10 @@
     /* align-items: center; */
     flex-flow: column wrap;
 
+/* решение с марджин не оч, нужно центрировать этот элемент независимо от того, что слева*/
+
     border: solid red;
-    color: black;
+    /* color: black; */
     margin-left: 300px;
 }
 
