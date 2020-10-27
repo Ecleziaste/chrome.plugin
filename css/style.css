@@ -6,10 +6,11 @@
     font-size: 16px;
     color: whitesmoke;
     /* background-image: url('../img/moraine_lake.jpg'); */
-    /* max-width: 100%; */
+    /* max-width: 100%;
+    max-height: 100%; */
     /* letter-spacing: 0.5px; */
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 
 img {
@@ -26,7 +27,27 @@ img {
     letter-spacing: 0.5px ;
     padding: 10px;
     margin: 0;
+
+    /* что-то лежит не там где надо. размер имг не влияет на размер оберточного блока.... */
+    /* КЛЮЧ ЗДЕСЬ!!!! */
+
+    /* display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 100%; */
     /* background: url('../img/moraine_lake.jpg') no-repeat center top / cover; */
+}
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex: 1;
+    /* max-width: 100%; */
+    height: 100vh;
+    width: 100vw;      
+    /* height: 100%; */
+
 }
 
 .main__header {
@@ -56,15 +77,22 @@ img {
 .main__content {
   
     /* нужно центрировать относительно верхних и нижних блоков по флексу для любых экранов, если возможно
-    margin: 250px сделано на глаз
+    margin: 240px сделано на глаз
      */
 
     display: flex;
     justify-content: center;
-    margin: 250px auto;
+    align-items: center;
+    /* width: 100%;
+    height: 100%; */
+    max-width: 100%;
+    max-height: 100%;
+    /* margin: 240px auto; */
     font-weight: 900;
     font-size: 40px;
     color: rgb(140, 15, 15);
+
+    border: solid red;
 }
 
 .center__column {
