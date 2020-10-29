@@ -10,24 +10,25 @@
     max-height: 100%; */
     /* letter-spacing: 0.5px; */
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    /* height: 100vh;
+    width: 100vw;  */
 }
 
 img {
     border: 0px;
-    position:fixed;
+    position: fixed;
     z-index: -1;
-    top:0;
-    left:0; 
-    max-width:100%;
-    height:auto;
+    top: 0;
+    left: 0; 
+    max-width: 100%;;
+    height: auto;
 }
 
 .main__wrapper {
     letter-spacing: 0.5px ;
     padding: 10px;
     margin: 0;
-
     /* что-то лежит не там где надо. размер имг не влияет на размер оберточного блока.... */
     /* КЛЮЧ ЗДЕСЬ!!!! */
 
@@ -43,9 +44,16 @@ img {
     flex-flow: column wrap;
     justify-content: space-between;
     flex: 1;
-    /* max-width: 100%; */
+
+    padding: 0;
+    margin: 0;
+ 
+    max-width: 100%;
+    max-height: 100%;
+    /* width: 100vw;      */
     height: 100vh;
-    width: 100vw;      
+    /* НАДО МЕНЯТЬ ЭТОТ СПОСОБ, ЧТОБЫ ФЛЕКС ТОЖЕ РАБОТАЛ, НО БЛОК НЕ ВЫЛАЗИЛ ЗА КРАЯ ВЬЮПОРТА */
+    
     /* height: 100%; */
 
 }
