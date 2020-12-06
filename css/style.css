@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
+* {
+    border: 1px solid red;
+}
+
 .body {
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: whitesmoke;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
     /* background-image: url('../img/moraine_lake.jpg'); */
     /* letter-spacing: 0.5px; */
     padding: 0;
@@ -14,28 +20,44 @@
 }
 
 .main__wrapper {
+    /* overflow: hidden; */
     letter-spacing: 0.5px ;
     margin: 0;
     padding: 0;
 }
 
 img {
+    display: flex;
+    align-items: center;
     border: 0px;
     position: fixed;
-    z-index: -1;
-    margin: auto;
+    /* position: absolute; */
     /* top: 0;
-    left: 0;  */
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    z-index: -1;
+    object-fit: cover;
+    /* margin: 0 auto;
+    margin: 0; */
+   
     width: 100%;
+    /* height: auto; */
     height: 100%;
-    max-width: 100%;
-    max-height: auto;
 }
 
-.main {
+@media (max-width: 1200px) {
+    img {
+        /* width: 1200px; */
+        /* height: 100%; */
+    }
+}
 
+
+.main {
+    overflow: hidden;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     flex: 1;
 
@@ -44,28 +66,25 @@ img {
  
     max-width: 100%;
     height: 100vh;
-    
-
 }
 
 .main__header {
     display: flex;
-    margin-right: 5px;
+    /* margin-right: 10px;
+    margin-top: 10px; */
     justify-content: flex-end;
     flex-flow: row wrap;
 }
 
 .header__column {
     display: flex;
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
     margin: 5px;
     padding: 5px;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    
-    border: solid red;
 }
 
 .upper__element {
@@ -79,45 +98,62 @@ img {
     font-weight: 900;
     font-size: 40px;
     color: rgb(140, 15, 15);
+}
 
-    border: solid red;
+/* .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.quote {
+    text-align: center;
 }
 
 .center__column {
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    /* align-self: stretch; */
     flex-flow: column wrap;
 }
 
 .main__footer {
     display: flex;
-    justify-content: flex-start;
-    /* align-items: flex-end; */
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    /* margin: 0 auto; */
+    justify-content: space-between;
 }
 
 .footer__widget_column {
     display: flex;
-    justify-content: center;
-    /* align-self: center; */
-    /* align-items: center; */
+    /* margin: 0 auto; */
     flex-flow: column wrap;
-
-/* решение с марджин не оч, нужно центрировать этот элемент независимо от того, что слева*/
-
-    border: solid red;
-    /* color: black; */
-    margin-left: 300px;
 }
 
 .image__widget_row {
+    /* position: absolute;
+    left: 0; */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    /* justify-self: flex-start; */
+    padding: 0 20px 0 20px;
+    /* justify-content: flex-start;
+    align-items: flex-end; */
+}
 
-    border: solid red;
+.footer__todo {
+    /* position: absolute;
+    right: 0; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    /* align-self: center; */
+    padding: 0 20px 0 20px;
 }
 
 .options__icon {
@@ -137,6 +173,8 @@ img {
 
 .footer__quote {
     margin: 4px auto;
+    text-transform: uppercase;
+    font-size: 26px;
 }
 
 .footer__inner_content {
@@ -145,3 +183,4 @@ img {
 
 
 
+/* iPadPro проблемы с картинкой внизу не хватает высоты при горизонтальном положении экрана */
