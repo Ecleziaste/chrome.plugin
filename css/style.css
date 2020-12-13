@@ -20,7 +20,6 @@
 }
 
 .main__wrapper {
-    /* overflow: hidden; */
     letter-spacing: 0.5px ;
     margin: 0;
     padding: 0;
@@ -33,26 +32,10 @@ img {
     z-index: -1;
     object-fit: cover;
     position: fixed;
-    /* position: absolute; */
-    /* top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; */
-    
-    /* margin: 0 auto; */
    
     width: 100%;
-    /* height: auto; */
     height: 100%;
 }
-
-@media (max-width: 1200px) {
-    img {
-        /* width: 1200px; */
-        /* height: 100%; */
-    }
-}
-
 
 .main {
     overflow: hidden;
@@ -78,8 +61,6 @@ img {
 
 .header__column {
     display: flex;
-    /* width: 50px;
-    height: 50px; */
     margin: 5px;
     padding: 5px;
     justify-content: center;
@@ -87,33 +68,47 @@ img {
     flex-flow: column wrap;
 }
 
-.upper__element {
+/* .upper__element {
     color: blueviolet;
-}
+} */
 
 .main__content {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-weight: 900;
+    text-align: center;
+    /* align-items: center; */
+    font-weight: 600;
     font-size: 40px;
     color: rgb(140, 15, 15);
 }
 
 .time {
-    font-size: 182px;
+    font-size: 172px;
+    /* padding: 0;
+    margin: 0; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
 }
 
-.quote {
-    text-align: center;
+@media (max-width: 500px) {
+    .time {
+        font-size: 122px;
+    }
 }
+
+.appeal {
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+/* .quote {
+    text-align: center;
+} */
 
 .center__column {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     /* align-self: stretch; */
     flex-flow: column wrap;
@@ -133,7 +128,7 @@ img {
     flex-flow: column wrap;
 }
 
-.image__widget_row {
+.footer__widget_row_left {
     /* position: absolute;
     left: 0; */
     display: flex;
@@ -165,7 +160,7 @@ img {
     margin: 5px;
 }
 
-.image__widget_row_second {
+.footer__widget_row_right {
     display: flex;
     flex-flow: row wrap;
     max-width: 600px;
