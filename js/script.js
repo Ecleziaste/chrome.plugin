@@ -1,12 +1,5 @@
     'use strict';
 
-//делаем ширину правого блока в футере такой же, как и у левого, чтоб Flex-box красиво отработал
-    const leftWidget = document.querySelector('.footer__widget_row_left');
-    const rightWidget = document.querySelector('.footer__todo');
-    const takeWidth = leftWidget.clientWidth;
-    let changeWidth = () => { rightWidget.style.width = `${takeWidth}px`};
-    changeWidth();
-
 // функция добавления ведущих нулей (если число меньше десяти, перед числом добавляем ноль)
 //TODO: попробовать переписать на стрелочные, чтобы сократить код, убрать return
     function zeroFirst(value) {
@@ -22,10 +15,7 @@
         let currentTime = new Date();
         let hours = zeroFirst(currentTime.getHours());
         let minutes = zeroFirst(currentTime.getMinutes());
-        // let showTime = hours;
-        // let seconds = zeroFirst(currentTime.getSeconds());
-        // return hours+":"+minutes+":"+seconds;
-        // return hours;
+   
         return hours + ":" + minutes;
     };
 
@@ -56,10 +46,12 @@
         } else {
             timesOfDay = "night";
         }
-    // склеиваем строку для отображения в обращению к пользователю
+    // склеиваем строку для отображения в обращении к пользователю
     document.querySelector('.appeal').innerHTML = "Good " + timesOfDay + ", " + userName + ".";
     };
-
+    
     showTimesOfDay();
+    setInterval(showTimesOfDay, 1000);
+    
   
       
