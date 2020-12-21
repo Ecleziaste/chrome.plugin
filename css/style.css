@@ -1,35 +1,26 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
-
 /* * {
     border: 1px solid red;
 } */
-
 .body {
     /* font-family: 'Heebo', sans-serif; */
     font-family: 'Abel', sans-serif;
     font-weight: 800;
     font-size: 18px;
     color: #f5e5f1;
+    /* color: #f7f7f7; */
     /* color: whitesmoke; */
     text-shadow: 0 1px 5px rgba(0,0,0,0.1);
     /* overflow: hidden; */
-
     padding: 0;
     margin: 0;
-/* 
-    border: 0; */
-    /* height: 100vh;
-    width: 100vw;  */
 }
-
 .main__wrapper {
     letter-spacing: 0.5px ;
     margin: 0;
     padding: 0;
 }
-
 img {
     /* display: flex;
     align-items: center; */
@@ -41,13 +32,12 @@ img {
     width: 100%;
     height: 100%;
 }
-
 .main {
     /* overflow: hidden; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    flex: 1;
+    /* flex: 1; */
 
     padding: 0;
     margin: 0;
@@ -55,7 +45,6 @@ img {
     max-width: 100%;
     height: 100vh;
 }
-
 .main__header {
     display: flex;
     /* margin-right: 10px;
@@ -63,7 +52,6 @@ img {
     justify-content: flex-end;
     flex-flow: row wrap;
 }
-
 .header__column {
     display: flex;
     margin: 5px;
@@ -72,7 +60,6 @@ img {
     align-items: center;
     flex-flow: column wrap;
 }
-
 .main__content {
     display: flex;
     justify-content: center;
@@ -80,9 +67,8 @@ img {
     /* align-items: center; */
     font-weight: 600;
     font-size: 40px;
-    color: rgb(140, 15, 15);
+    /* color: rgb(140, 15, 15); */
 }
-
 .time {
     font-size: 172px;
     /* padding: 0;
@@ -100,7 +86,6 @@ img {
         font-size: 32px;
     }
 }
-
 @media (max-width: 500px) {
     .time {
         font-size: 102px;
@@ -109,7 +94,6 @@ img {
         font-size: 26px;
     }
 }
-
 @media (max-width: 400px) {
     .time {
         font-size: 82px;
@@ -134,11 +118,9 @@ img {
     margin-top: -20px;
     margin-bottom: 20px;
 }
-
 /* .quote {
     text-align: center;
 } */
-
 .center__column {
     display: flex;
     justify-content: center;
@@ -146,16 +128,12 @@ img {
     /* align-self: stretch; */
     flex-flow: column wrap;
 }
-
 .main__footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    /* flex: 0 0 auto; */
-    /* margin: 0 auto; */
     justify-content: space-between;
 }
-
 .footer__widget_row_left {
     width: 33.3%;
     display: flex;
@@ -164,7 +142,6 @@ img {
     align-items: center;
     padding: 0 20px;
 }
-
 .footer__widget_column {
     width: 33.3%;
     display: flex;
@@ -172,7 +149,6 @@ img {
     /* justify-content: center; */
     align-items: center;
 }
-
 .footer__todo {
     width: 33.3%;
     display: flex;
@@ -181,33 +157,30 @@ img {
     align-items: center;
     padding: 0 20px;
 }
-
 .options__icon {
     margin: 5px;
 }
-
 .image__location {
     margin: 5px;
 }
-
 .footer__widget_row_right {
     display: flex;
     flex-flow: row wrap;
     max-width: 600px;
     justify-content: space-between;
 }
-
 .footer__quote {
     display: flex;
     margin: 4px auto;
     text-transform: uppercase;
     font-size: 26px;
 }
-
 .footer__inner_content {
     margin: 5px;
 }
 
-
+/* .weather {
+    display: inline-block;
+} */
 
 /* iPadPro проблемы с картинкой внизу не хватает высоты при горизонтальном положении экрана */
